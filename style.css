@@ -1,0 +1,23 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+}
+span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	text-transform: uppercase;
+	font: 700 3em/1.5 "tahoma";
+	background:url('image/anim_img.png') repeat-y;
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	animation:anim 80s linear infinite;
+	backface-visibility:hidden;
+}
+
+@-webkit-keyframes anim{
+	0% { background-position: 0% 50%;}
+	100% { background-position: 100% 50%;}
+}
